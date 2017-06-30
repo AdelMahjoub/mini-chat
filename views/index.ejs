@@ -1,0 +1,74 @@
+<% include partials/header.ejs %>
+
+<div class="modal fade" id="modal-id">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Set a Nickname</h4>
+      </div>
+      <div class="modal-body">
+        <input 
+          id="nickname"
+          type="text" 
+          class="form-control" 
+          placeholder="nickname"
+          autofocus>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button 
+          type="button" 
+          class="btn btn-primary"
+          id="nickname-submit">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Messages -->
+<div class="row">
+  <div 
+    class="col-xs-12 col-md-12" >
+    <div 
+      id="messages-container"
+      style="overflow-y: scroll; height: 700px; padding: 10px;">
+      <div id="messages"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Horizontal separator -->
+<div class="row">
+  <div class="col-xs-12 col-md-12">
+    <hr>
+  </div>
+</div>
+
+<!-- Message form -->
+<div class="row">
+  <div class="col-xs-12 col-md-12">
+    <form id="message-form">
+      <div class="form-group">
+        <div class="input-group">
+          <input 
+            type="text" 
+            class="form-control"
+            placeholder="message"
+            id="message"
+            autofocus>
+            <div
+            id="message-form-btn" 
+            class="input-group-addon btn btn-default">
+              <span>
+                <i class="fa fa-paper-plane"></i>
+              </span>
+            </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<% include partials/footer %>
